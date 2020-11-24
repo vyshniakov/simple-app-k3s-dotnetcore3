@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: Config
+clusters:
+- name: "aws"
+  cluster:
+    server: "https://rancherlab.simpleblocks.net/k8s/clusters/c-thw7c"
+
+users:
+- name: "aws"
+  user:
+    token: "kubeconfig-user-dm6x6:f92hvv4mhj7xdbxf7spjd94qlpgtbz5hw497xlp2ghq5ll7hzxrjvn"
+
+
+contexts:
+- name: "aws"
+  context:
+    user: "aws"
+    cluster: "aws"
+
+current-context: "aws"
